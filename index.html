@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FacultyFeedbackSystem</title>
+	<link rel="stylesheet" type="text/css" href="index_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		
+		
+		
+  	function openForm() {
+  		document.getElementById("wrapper").style.display = "block";
+	} 
+  	function closeForm() {
+  		document.getElementById("wrapper").style.display = "none";
+	} 
+
+	</script>
+</head>
+
+<body>
+
+	<button id = "getStarted" onclick="openForm()">Get Started</button>
+	<img id="logo" src="logo.png">
+	<p id ="myTag">FACULTY FEEDBACK SYSTEM</p>
+
+	<div id ="blur">
+	</div>
+
+	<div class="container">
+		<div class="icon-bar">		
+			<a href="#"><i class="fa fa-home"></i></a>	
+			<a href="#"><i class="fa fa-calendar"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>	
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-facebook-f"></i></a>
+		</div>
+	</div>
+
+
+	<div id="wrapper">
+	<div class="loginbox" id="myform">
+         <div id="close">&times;</div>
+         <script type="text/javascript">
+         	var closeBtn= document.getElementById('close');
+           closeBtn.addEventListener('click',closeForm);
+         </script>
+		<img src="avatar.jpg" class="avatar">
+		<h1>L O G I N</h1>
+		<form method="post" action="#"class="popup">			
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Enter Username">
+			<P>Password</P>
+			<input type="password" name="password" placeholder="Enter Password">
+			<select>
+  				<option value="Student">Student</option>
+  				<option value="Faculty">Faculty</option>  
+			</select>			
+			<button type="submit" class="btn" name="login_user" onclick="closeForm()" on>Login</button>
+		</form>
+	</div>
+</div>
+
+
+</body>
+</html>
